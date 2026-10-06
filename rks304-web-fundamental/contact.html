@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Muhammad Reza Ardiansyah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER & NAVIGASI KONSISTEN -->
+    <header class="navbar">
+        <h1>Contact</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portofolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <section class="contact-section">
+        <h2>Hubungi Saya</h2>
+        <p class="sub-judul">Silakan isi formulir di bawah ini untuk diskusi, konsultasi, atau kolaborasi proyek.</p>
+
+        <div class="contact-card">
+            <form action="contact.html" class="form-kontak">
+                
+                <div class="form-grup">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="kategori">Kategori Keperluan</label>
+                    <select id="kategori" name="Kategori" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="Konsultasi">Konsultasi Proyek</option>
+                        <option value="Kolaborasi">Kolaborasi Proyek</option>
+                        <option value="Pertanyaan">Pertanyaan Umum</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                </div>
+
+                <!-- Memakai class="button" yang sudah ada di style.css -->
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
